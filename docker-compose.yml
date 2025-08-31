@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  icon-preview-app:
+    build: .
+    ports:
+      - "3001:80"
+    container_name: icon-preview-container
+    restart: unless-stopped
+    
+  # Optional: Development service with hot reload
+  icon-preview-dev:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    container_name: icon-preview-dev-container
+    profiles:
+      - dev
