@@ -73,8 +73,8 @@ const Icons = () => {
     return (
         <section className="is-icons">
             <header>
-                <h1 className="mb-3 heading-1">ICONS</h1>
-                <CollapseExpand headerTitle="Instructions on naming and adding icons" svgIconSprite={svgIconsPath}>
+                <h1 className="mb-3 heading-1">SVG ICONS</h1>
+                <CollapseExpand containerClass="d-none" headerTitle="Instructions on naming and adding icons" svgIconSprite={svgIconsPath}>
                     <p>Icon names should be consistent, guessable and future proof. The name should describe what is
                         visually represented, not what the intended use of the icon is. With this in mind follow these
                         rules when adding a new icon:
@@ -103,7 +103,7 @@ const Icons = () => {
                         </ul>
                     </p>
                 </CollapseExpand>
-                <div className="search-group mt-5 mb-lg-1">
+                <div className="search-group mt-5 mb-lg-1 w-75">
                     <input className="form-control text-start search-input"
                            type="text" name="searchIcons" value={searchValue}
                            onChange={(e) => search(e.target.value)}
@@ -117,7 +117,7 @@ const Icons = () => {
                 </div>
 
             </header>
-            <div className="mb-5">
+            <div className="mb-5 d-none">
                 <CodePreview heading="" open={false}
                              htmlTabContent={
                                  html`
@@ -191,7 +191,7 @@ const Icons = () => {
                              }
                 />
             </div>
-            <div className="d-flex flex-wrap align-items-stretch">
+            <div className="d-flex flex-wrap align-items-stretch mt-4">
                 {
                     searchResults &&
                     searchResults.sort((a, b) => a.name.localeCompare(b.name)).map(icon =>
