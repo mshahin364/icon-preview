@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/icon-preview/',
   build: {
+    outDir: 'dist',
     rollupOptions: {
-      input: './index.html'
+      input: 'index.html'
     }
   }
 })
