@@ -1,0 +1,49 @@
+// Import Bootstrap 5
+@import "bootstrap/scss/bootstrap";
+@import "is-icon";
+@import "icons";
+
+// Custom variables and overrides
+:root {
+  --primary-color: #646cff;
+  --secondary-color: #535bf2;
+}
+
+// Custom styles
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 2rem 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+:root {
+  --background-neutral-subtle-color:#48484a;
+}
+
+.collapse-expand-container {
+  .card-header {
+    height: 40px;
+    background-color: var(--background-neutral-subtle-color);
+  }
+}
