@@ -1,0 +1,11 @@
+// .eslintrc.json
+{
+  "extends": [
+    // ... other extends
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    // ... other rules
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}

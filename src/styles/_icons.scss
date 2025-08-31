@@ -1,0 +1,59 @@
+
+
+.is-icons {
+  .icon-wrapper {
+    background:#f0f2f5;
+    height: 12em;
+    width: 21em;
+    font-size: 12px;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 20px;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #384EC1;
+      color: #ffffff;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
+
+    .icon-container {
+      min-width: 30px;
+    }
+
+    button {
+      svg {
+        width: 18px;
+      }
+    }
+
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .fs0 {
+    font-size: 16px;
+  }
+
+  .fs1 {
+    font-size: 32px;
+  }
+
+  .name {
+    font-size: 0.5em;
+  }
+
+  .search-input {
+    padding-left: 35px;
+  }
+}
