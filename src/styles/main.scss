@@ -38,7 +38,7 @@ body {
 }
 
 :root {
-  --background-neutral-subtle-color:#48484a;
+  --background-neutral-subtle-color:#d5d5d5;
 }
 
 .collapse-expand-container {
@@ -46,4 +46,40 @@ body {
     height: 40px;
     background-color: var(--background-neutral-subtle-color);
   }
+}
+
+
+.search-group {
+  position: relative;
+
+  .form-control {
+    height: 32px;
+    border: 1px solid;
+    border-color: #ddd;
+
+    &,
+    &:focus {
+      background: #ffffff;
+    }
+  }
+
+  button[type=submit] {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    color: #696a6e;
+    background: #ffffff;
+    padding: 5px;
+    border: 0;
+    line-height: 1.2;
+    height: 30px;
+  }
+
+  .close {
+    position: absolute;
+    top: 8px;
+    font-size: 1rem;
+    right: 6px;
+  }
+
 }
